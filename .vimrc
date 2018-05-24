@@ -16,7 +16,8 @@ Plugin 'honza/vim-snippets'
 Plugin 'mtth/scratch.vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
-Plugin 'mhinz/vim-signify'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'farmergreg/vim-lastplace'
 
 call vundle#end()
 filetype plugin indent on
@@ -63,4 +64,6 @@ if ! has('gui_running')
   augroup END
 endif
 
-" airline theme
+let g:airline_theme='angr'
+
+set directory^=$HOME/.vim/tmp//
